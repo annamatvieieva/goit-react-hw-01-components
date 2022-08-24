@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
+import { Box } from 'components/Box';
+import {ProfileAvatar, ProfileDescription, ProfileName} from './ProfileInfo.styled'
 
 export const ProfileInfo = ({ username, tag, location, avatar }) => {
   return (
-    <div>
-      <img src={avatar} alt="User avatar" />
-      <p>{username}</p>
-      <p>{`@${tag}`}</p>
-      <p>{location}</p>
-    </div>
+    <Box py={5} px={4} display='flex'  alignItems='center' justifyContent='center' flexDirection='column'>
+      <ProfileAvatar src={avatar} alt="User avatar" />
+      <ProfileName>{username}</ProfileName>
+      <ProfileDescription>{`@${tag}`}</ProfileDescription>
+      <ProfileDescription>{location}</ProfileDescription>
+    </Box>
   );
 };
 

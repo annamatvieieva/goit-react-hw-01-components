@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
+import {
+  StatisticsItem,
+  StatisticsText,
+  StatisticsTextBlack,
+} from './ProfileStatistics.styled';
 
 export const ProfileStatistics = ({ stats, text }) => {
   return (
-    <li>
-      <span>{text}</span>
-      <span>{stats}</span>
-    </li>
+    <StatisticsItem>
+      <StatisticsText>{text}</StatisticsText>
+      <StatisticsTextBlack>{stats}</StatisticsTextBlack>
+    </StatisticsItem>
   );
 };
 

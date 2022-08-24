@@ -1,23 +1,25 @@
 import PropTypes from 'prop-types';
 import { ProfileStatistics } from './ProfileStatistics/ProfileStatistics';
 import { ProfileInfo } from './ProfileInfo/ProfileInfo';
+import { Box } from 'components/Box';
+import { ProfileBox } from './Profile.styled';
 
 export const Profile = ({ user }) => {
-	const { username, tag, location, stats, avatar } = user;
+  const { username, tag, location, stats, avatar } = user;
   return (
-    <div>
+    <ProfileBox>
       <ProfileInfo
         username={username}
         tag={tag}
         location={location}
         avatar={avatar}
       />
-      <ul>
+      <Box as="ul" display="flex">
         <ProfileStatistics text="Followers" stats={stats.followers} />
         <ProfileStatistics text="Views" stats={stats.views} />
         <ProfileStatistics text="Likes" stats={stats.likes} />
-      </ul>
-    </div>
+      </Box>
+    </ProfileBox>
   );
 };
 
