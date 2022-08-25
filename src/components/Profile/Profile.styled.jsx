@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfileBox= styled.div`
- width: 250px;
+ max-width: 250px;
  overflow: hidden;
  margin-top: ${ p => p.theme.space[5]}px;
   margin-bottom: ${ p => p.theme.space[5]}px;

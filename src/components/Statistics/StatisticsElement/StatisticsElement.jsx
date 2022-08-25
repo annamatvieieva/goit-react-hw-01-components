@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { StatisticsItem, StatisticsText, StatisticsBigText } from './StatisticsElement.styled'
 
 export const StatisticsElement = ({  label, percentage }) => {
   return (
-    <li>
-      <span>{label}</span>
-      <span>{`${percentage}%`}</span>
-    </li>
+    <StatisticsItem>
+      <StatisticsText>{label}</StatisticsText>
+      <StatisticsBigText>{`${percentage}%`}</StatisticsBigText>
+    </StatisticsItem>
   );
 };
 
