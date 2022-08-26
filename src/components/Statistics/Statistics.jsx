@@ -6,7 +6,7 @@ import { StatisticsTitle } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <Box as='section' maxWidth='500px' mx='auto' flexWrap='wrap'>
+    <Box as='section' maxWidth='500px' mx='auto' mb={5} flexWrap='wrap' >
         {title ? <StatisticsTitle>{title}</StatisticsTitle> : null}
       <Box as="ul" display="flex" justifyContent='center'>
         {stats.map(({ id, label, percentage }) => (
