@@ -9,17 +9,6 @@ export const TransactionTable = styled.table`
   border-collapse: collapse;
   border: ${p => p.theme.borders.normal} ${p => p.theme.colors.secondary};
 
-	// &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	border: 2px solid black;
-	// 	border-radius: 8px;
-	// }
-
   thead tr {
     background-color: ${p => p.theme.colors.accent};
   }

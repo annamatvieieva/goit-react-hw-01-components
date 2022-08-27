@@ -9,5 +9,5 @@ export const ProfileBox= styled.div`
 	margin-right: auto;
 border: ${ p => p.theme.borders.normal} ${p => p.theme.colors.secondary};
 border-radius: ${ p => p.theme.radii.md};
-box-shadow: 8px 8px 24px -21px ${p => p.theme.colors.secondary};
+box-shadow: 3px 1px 11px 0px ${p => p.theme.colors.secondary};
 `;

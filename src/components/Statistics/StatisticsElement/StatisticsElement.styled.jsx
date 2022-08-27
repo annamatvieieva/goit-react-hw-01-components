@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-function getRandomHexColor() {
+const getRandomHexColor = () => {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
@@ -14,7 +14,7 @@ export const StatisticsItem = styled.li`
   padding: ${p => p.theme.space[2]}px;
 `;
 
-export const StatisticsText = styled.p`
+export const StatisticsText = styled.span`
   color: ${p => p.theme.colors.white};
   font-family: ${p => p.theme.fonts.body};
   font-size: ${p => p.theme.fontSizes.s};

@@ -11,7 +11,7 @@ export const StatisticsItem = styled.li`
   border: ${ p => p.theme.borders.normal} ${ p => p.theme.colors.secondary};
 `;
 
-export const StatisticsText = styled.p`
+export const StatisticsText = styled.span`
   color: ${p => p.theme.colors.grey};
   font-family: ${p => p.theme.fonts.body};
   font-size: ${p => p.theme.fontSizes.s};
